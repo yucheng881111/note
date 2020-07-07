@@ -5,7 +5,9 @@
 
 
 ## NCTUOJ 857-XOR
-10^9個數字做xor，時間限制1秒，直接用for迴圈明顯來不及(空的迴圈跑10^9次大約是1.3秒)。因此用segment tree，這種divide and conquer的方式克服O(logn)的複雜度。
+description: 輸入一串數字和range，求出range裡所有數字xor出來的值。
+
+10^9 個數字做xor，時間限制1秒，直接用for迴圈明顯來不及(空的迴圈跑10^9次大約是1.3秒)。因此用segment tree，這種divide and conquer的方式克服O(logn)的複雜度。Segment tree可以觀察範圍型的資料，只要傳入l,r即可，是一種相當好用的資料型態。
 
 
 
