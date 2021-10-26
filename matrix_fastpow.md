@@ -5,8 +5,14 @@
 
 f(0)=1; f(1)=1; f(2)=2; f(3)=3; f(4)=5...
 n=1 代入得到f(2)=2為左乘狀態轉移矩陣一次。
-求f(x)必須左乘狀態轉移矩陣x-1次
+求f(x)必須左乘狀態轉移矩陣x-1次: 
 ![](https://i.imgur.com/g1qW0TD.png =15%x)![](https://i.imgur.com/dZmzvO6.png =4%x)=![](https://i.imgur.com/xvtKfNl.png =15%x)
+
+若轉移方程出現常數，則轉移矩陣必須多一個維度的常數項。
+ex: f(x+1) = a * f(x) + b
+則:
+![](https://i.imgur.com/BL0Q8FZ.jpg)
+
 
 ## Example
 f(x+1)=2f(x)+4f(x-1); f(0)=1, f(1)=4
