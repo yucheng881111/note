@@ -20,6 +20,10 @@ int josephus_recursion(int n, int k) { //遞回版本
 }
 ```
 
+## 公式證明
+
+https://www.youtube.com/watch?v=Yeh1_2GyS5s
+
 ## Uva 440
 先將所有n對所有k的表建出來，再從表裡面找比較快。因為1一定會被刪，所以直接把2(目標)當成0來執行。
 
