@@ -84,7 +84,7 @@ void build_SCC_graph(int component_size, vector<vector<int>> &adj, vector<int> &
 一個有環的有向圖，找到一條含最多不重複的node的路徑(最長路徑)。
 
 ### 解
-必須先用SCC收縮環，再以DFS搜尋收縮後的SCC Graph。最後DP從leaf至root加總路徑上SCC group的所有node。
+必須先用SCC收縮環，再以DFS搜尋收縮後的SCC Graph並存下finish order。最後DP以finish order順序從leaf至root加總路徑上SCC group的所有node。
 
 ### code
 ```
